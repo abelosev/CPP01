@@ -16,7 +16,7 @@ OBJ     = $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRC))
 
 # Compilation
 CC      = g++
-CFLAGS  = -Wall -Wextra -Werror -std=c++98 -g -I$(INC_DIR)
+CFLAGS  = -Wall -Wextra -Werror -std=c++98 -I$(INC_DIR)
 
 all: $(NAME)
 

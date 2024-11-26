@@ -9,7 +9,7 @@ OBJ_DIR = ./obj
 
 # Compilation
 CC      = g++
-CFLAGS  = -Wall -Wextra -Werror -std=c++98 -g
+CFLAGS  = -Wall -Wextra -Werror -std=c++98
 
 all: $(NAME)
 

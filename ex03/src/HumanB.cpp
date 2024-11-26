@@ -19,6 +19,6 @@ void	HumanB::attack() const {
 		std::cerr << "No weapon was set" << std::endl;
 		return ;
 	}
-	std::cout << this->_name << "attacks with their " << this->_weaponPtr->getType() << std::endl;
+	std::cout << this->_name << " attacks with their " << this->_weaponPtr->getType() << std::endl;
 }
 
