@@ -11,13 +11,13 @@ int Sed::replace(const std::string& filename, const std::string& s1, const std::
         std::cerr << "Error: s1 or s2 are empty" << std::endl;
         return 1;
     }
-    std::ifstream infile(filename);
+    std::ifstream infile(filename.c_str());
     if (!infile.is_open()) {
         std::cerr << "Error: can't open file " << filename << std::endl;
         return 1;
     }
     std::string outputFile = filename + ".replace";
-    std::ofstream outfile(outputFile, std::ios::trunc);
+    std::ofstream outfile(outputFile.c_str(), std::ios::trunc);
     if (!outfile.is_open()) {
         std::cerr << "Error: can't create output file " << outputFile << std::endl;
         infile.close();
