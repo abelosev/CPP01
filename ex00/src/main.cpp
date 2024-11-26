@@ -2,7 +2,7 @@
 
 int main()
 {
-	Zombie z1("Ana");
+	randomChump( "Ana");
 	Zombie *z2 = newZombie("Ael");
 	std::cout << "Zombie Ana is created on stack" << std::endl;
 	std::cout << "Zombie Ael is created on heap (needs memory deallocation)" << std::endl;
